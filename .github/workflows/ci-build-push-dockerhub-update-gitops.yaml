@@ -62,3 +62,7 @@ jobs:
           git add "${{ env.KUSTOMIZE_FILE }}"
           git commit -m "chore: deploy demo image ${{ steps.meta.outputs.tag }}" || exit 0
           git push
+
+
+
+          

@@ -3,6 +3,6 @@ build
 out
 bin  
 *.iml 
-.idea
+.idea 
 .DS_Store 
  

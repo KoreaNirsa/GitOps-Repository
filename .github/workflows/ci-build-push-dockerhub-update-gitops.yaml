@@ -6,7 +6,7 @@ on:
 
 env:
   IMAGE_NAME: docker.io/koreanirsa/demo
-  GITOPS_REPO: KoreaNirsa/GitOps-Repository
+  GITOPS_REPO: KoreaNirsa/GitOps
   GITOPS_BRANCH: master
   KUSTOMIZE_FILE: apps/demo/kustomization.yaml
 

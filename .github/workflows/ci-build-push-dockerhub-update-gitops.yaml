@@ -2,12 +2,12 @@ name: CI Build/Push and Update GitOps
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
 env:
   IMAGE_NAME: docker.io/koreanirsa/demo
   GITOPS_REPO: KoreaNirsa/GitOps-Repository
-  GITOPS_BRANCH: main
+  GITOPS_BRANCH: master
   KUSTOMIZE_FILE: apps/demo/kustomization.yaml
 
 jobs:

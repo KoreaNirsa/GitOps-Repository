@@ -7,10 +7,7 @@ RUN gradle clean bootJar -x test
 # ---- run stage ----
 FROM eclipse-temurin:21-jre
 WORKDIR /GitOps
-COPY --from=build /GitOps/build/libs/*.jar GitOps.jar
+COPY --from=build /GitOps/build/libs/*SNAPSHOT.jar GitOps.jar
 
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/GitOps/GitOps.jar"]
-
-
-
+ENTRYPOINT ["java","-jar","GitOps.jar"]
